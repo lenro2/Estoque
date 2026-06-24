@@ -1,0 +1,22 @@
+body {
+    background-color: burlywood;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+}
+
+.logoF {
+    height: 200px;
+}
+
+.login {
+    margin-top: 25x;
+    margin-right: 25px;
+    margin-left: 90%;
+    background-color: rgb(153, 185, 96);
+    border: 10px;
+    border-radius: 15px;
+    text-align: center;
+}
