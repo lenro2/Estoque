@@ -3,15 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tempere Alimentos</title>
+    <title>Estoque</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="img">
-        <img src="imagens/LogoTempereAlimentos.png" alt="" class="logoF">
+    <div class="overlay" style="display: none;"></div>
+    <div class="add" style="display: none;">
+        <button onclick="closeadd()" class="closeadd">X</button>
+        <div class="interior">
+            <h2><strong>Adicionar</strong></h2>
+            <p>Nome do produto</p>
+            <input type="text" id="nomep">
+        </div>
     </div>
-    <div class="login">
-        <p class="login1">Entrar</p>
-    </div>
+    <header>
+        <nav>
+            <a href="">Estoque</a>
+            <a href="">Pedidos</a>
+            <a href="">Ajuda</a>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Estoque</h1>
+            <button onclick="adicionar()" class="botao">Adicionar <br> Produto</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
