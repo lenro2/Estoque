@@ -60,6 +60,8 @@ a {
     text-decoration: none;
     color: inherit;
     display: flex;
+    padding: 30px;
+    border-bottom: 5px solid #31b52f;
 }
 
 .container {
