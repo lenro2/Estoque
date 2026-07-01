@@ -65,7 +65,7 @@ nav a {
 }
 
 nav a :hover {
-    border-bottom-color: 5px solid #42f57b;
+    border-bottom: 5px solid #42f57b;
 }
 
 .container {
