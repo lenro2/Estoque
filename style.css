@@ -52,8 +52,8 @@ header {
 
 nav {
     display: flex;
-    justify-content: space-between;
-    gap: 30px
+    justify-content: center;
+    align-items: center;
 }
 
 nav a {
