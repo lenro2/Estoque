@@ -46,7 +46,6 @@
 header {
     background-color: rgb(87, 168, 235);
     display: flex;
-    padding: 25px;
     justify-content: center;
 }
 
