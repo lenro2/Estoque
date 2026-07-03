@@ -41,6 +41,7 @@
 
 .interior {
     margin: 10%;
+    justify-content: center;
 }
 
 header {
@@ -80,4 +81,38 @@ nav a:hover {
     border-radius: 15px;
     font-size: 15px;
     font-weight: bold;
+}
+
+.addform {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 300px;
+  justify-content: center;
+}
+
+input {
+  justify-content: center;
+}
+
+.addform div {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 100%;
+}
+
+.addform div input, .addform div select {
+    width: 100%;
+}
+
+.addform div label {
+    font-weight: bold;
+    margin-top: 10x;
+}
+
+.radiogram {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
 }
