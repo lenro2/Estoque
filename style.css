@@ -116,3 +116,8 @@ input {
     flex-direction: row !important;
     align-items: center;
 }
+
+.radiogram input {
+    display: flex;
+    aling-items: center;
+}
