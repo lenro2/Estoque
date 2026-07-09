@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Dentro do openadd -->
     <div class="overlay" style="display: none;"></div>
     <div class="add" style="display: none;">
         <button onclick="closeadd()" class="closeadd">X</button>
         <div class="interior">
             <h2><strong>Adicionar</strong></h2>
-            <form action="add()" class="addform">
+            <form id="addp" class="addform">
                 <label for="nomep">Nome do Produto: </label>
                 <input type="text" name="nomep" id="nomep">
                 
@@ -22,19 +23,19 @@
                     <option value="produto">Produto</option>
                 </select>
 
-                <div id="gramagem" style="display: none;">
-                    <label for="gram">Gramagem: </label>
-                    <input type="number" name="gram" id="gram">
-
-                    <label for="g-kg">Tipo de pesagem: </label>
+                <label for="gram">Gramagem: </label>
+                <input type="number" name="gram" id="gram">
+                <label for="g-kg">Tipo de pesagem: </label>
                     <div class="radiogram">
                         <input type="radio" name="g-kg" id="g">g
                         <input type="radio" name="g-kg" id="kg">Kg
                     </div>
                 </div>
+                <button type="submit">Adicionar</button>
             </form>
         </div>
     </div>
+    <!-- /Dentro do openadd -->
     <header>
         <nav>
             <a href="index.html">Estoque</a>
@@ -45,7 +46,7 @@
     <main>
         <div class="container">
             <h1>Estoque</h1>
-            <button onclick="openadd()" class="botao">Adicionar <br> Produto</button>
+            <button onclick="openadd()" class="botao">+</button>
         </div>
     </main>
     <script src="script.js"></script>
