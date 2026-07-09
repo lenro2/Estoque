@@ -40,6 +40,7 @@
 }
 
 .interior {
+    display: flex;
     margin: 10%;
     justify-content: center;
 }
@@ -115,4 +116,9 @@ input {
     display: flex !important;
     flex-direction: row !important;
     align-items: center;
+}
+
+.radiogram input {
+    display: flex;
+    aling-items: center;
 }
