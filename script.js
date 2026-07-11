@@ -13,6 +13,7 @@ function closeadd() {
 }
 
 addp.addEventListener("submit", add);
+
 function add(event) {
     event.preventDefault();
 
@@ -23,9 +24,13 @@ function add(event) {
         tipogram: document.querySelector('input[name="g-kg"]:checked').value
     };
 
+    console.log("Produto adicionado:", produto); // Debug
+    
     let produtos = JSON.parse(localStorage.getItem("produtos")) || [];
     produtos.push(produto);
     localStorage.setItem("produtos", JSON.stringify(produtos));
+
+    console.log("Produtos salvos:", produtos); // Debug
 
     event.target.reset();
     closeadd();
@@ -37,6 +42,8 @@ function renderizarP() {
     const listamp = document.getElementById("listamp");
     const p = JSON.parse(localStorage.getItem("produtos")) || [];
 
+    console.log("Renderizando produtos:", p); // Debug
+
     listap.innerHTML = "";
     listamp.innerHTML = "";
     
@@ -45,17 +52,18 @@ function renderizarP() {
         articlep.classList.add("produto");
 
         articlep.innerHTML = `
-        <h3>${produto.nome}</h3>
-        <p>${produto.gram} ${produto.tipogram}</p>
-        <p class="leveDestaque">${produto.tipo}</p>
+            <h3>${produto.nome}</h3>
+            <p>${produto.gram} ${produto.tipogram}</p>
+            <p class="leveDestaque">${produto.tipo}</p>
         `;
+        
         if (produto.tipo === "produto") {
             listap.appendChild(articlep);
         } else {
             listamp.appendChild(articlep);
         }
     });
-};
+}
 
 // Renderizar na primeira carga
 document.addEventListener("DOMContentLoaded", renderizarP);
