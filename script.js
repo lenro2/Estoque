@@ -44,7 +44,7 @@ function renderizarP() {
 
         articlep.innerHTML = `
         <h3>${produto.nome}</h3>
-        <p>${gram} ${produto.tipogram}</p>
+        <p>${produto.gram} ${produto.tipogram}</p>
         <p class="leveDestaque">${produto.tipo}</p>
         `;
         listap.appendChild(articlep);
