@@ -8,8 +8,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 400px;
-  height: auto;
+  width: 30%;
+  height: 70%;
   background-color: white;
   z-index: 9999;
   text-align: center;
