@@ -125,7 +125,7 @@ input {
 }
 
 .produto {
-    background-color: gray;
+    background-color: #dbdbdb;
     gap:10px
     padding: 15px;
     border: 2px;
