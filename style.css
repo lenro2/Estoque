@@ -135,3 +135,12 @@ input {
 .leveDestaque {
     font-size: 20px;
 }
+
+.container-lista {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cards fiquem um ao lado do outro */
+    gap: 20px;
+    margin-bottom: 30px; /* Dá um respiro antes do próximo título */
+    margin-top: 10px;    /* Dá um respiro após o h2 */
+    width: 100%;
+}
