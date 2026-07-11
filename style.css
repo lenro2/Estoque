@@ -40,11 +40,7 @@
 }
 
 .interior {
-    display: flex;
-    flex-direction: column;
-    aling-items: center;
-    justify-content: center;
-    margin: 10%;
+    text-align: center;
 }
 
 header {
