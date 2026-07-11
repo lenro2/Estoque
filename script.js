@@ -34,11 +34,11 @@ function add(event) {
 
 function renderizarP() {
     const listap = document.getElementById("listap");
-    const listamp = document.getElementById("listamd");
+    const listamp = document.getElementById("listamp");
     const p = JSON.parse(localStorage.getItem("produtos")) || [];
 
     listap.innerHTML = "";
-    listamd.innerHTML = "";
+    listamp.innerHTML = "";
     
     p.forEach((produto, index) => {
         const articlep = document.createElement("article");
