@@ -56,4 +56,6 @@ function renderizarP() {
         }
     });
 };
-renderizarP();
+
+// Renderizar na primeira carga
+document.addEventListener("DOMContentLoaded", renderizarP);
