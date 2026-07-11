@@ -67,3 +67,4 @@ function renderizarP() {
 
 // Renderizar na primeira carga
 document.addEventListener("DOMContentLoaded", renderizarP);
+localStorage.clear();
