@@ -125,10 +125,11 @@ input {
 }
 
 .produto {
-    background-color: #dbdbdb;
-    padding: 15px;
-    border: 2px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
     margin: 15px;
+    padding: 15px;
 };
 
 .leveDestaque {
