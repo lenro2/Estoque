@@ -125,9 +125,6 @@ input {
 }
 
 .produto {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
     background: #ededed;
     padding: 15px;
     border: 3px solid #bfbfbf;
