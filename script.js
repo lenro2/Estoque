@@ -34,10 +34,12 @@ function add(event) {
 
 function renderizarP() {
     const listap = document.getElementById("listap");
+    const listamp = document.getElementById("listamd");
     const p = JSON.parse(localStorage.getItem("produtos")) || [];
 
     listap.innerHTML = "";
-
+    listamd.innerHTML = "";
+    
     p.forEach((produto, index) => {
         const articlep = document.createElement("article");
         articlep.classList.add("produto");
@@ -47,7 +49,11 @@ function renderizarP() {
         <p>${produto.gram} ${produto.tipogram}</p>
         <p class="leveDestaque">${produto.tipo}</p>
         `;
-        listap.appendChild(articlep);
+        if (produto.tipo === "produto") {
+            listaProdutos.appendChild(articlep);
+        } else {
+            listaMateriaPrima.appendChild(articlep);
+        }
     });
 };
 renderizarP();
