@@ -24,17 +24,17 @@ function add(event) {
     };
 
     let produtos = JSON.parse(localStorage.getItem("produtos")) || [];
-
     produtos.push(produto);
-
     localStorage.setItem("produtos", JSON.stringify(produtos));
 
     event.target.reset();
+    closeadd();
+    renderizarP();
 }
 
 function renderizarP() {
     const listap = document.getElementById("listap");
-    const p = JSON.parse(localStorage.getItems("produtos")) || [];
+    const p = JSON.parse(localStorage.getItem("produtos")) || [];
 
     listap.innerHTML = "";
 
@@ -43,10 +43,11 @@ function renderizarP() {
         articlep.classList.add("produto");
 
         articlep.innerHTML = `
-        <h3>${nome}</h3>
-        <p>${gram} ${tipogram}</p>
-        <p class="leveDestaque">${tipo}</p>
+        <h3>${produto.nome}</h3>
+        <p>${gram} ${produto.tipogram}</p>
+        <p class="leveDestaque">${produto.tipo}</p>
         `;
-        listap.appenChild(articlep);
+        listap.appendChild(articlep);
     });
 };
+renderizarP();
