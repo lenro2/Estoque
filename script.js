@@ -32,3 +32,21 @@ function add(event) {
     event.target.reset();
 }
 
+function renderizarP() {
+    const listap = document.getElementById("listap");
+    const p = JSON.parse(localStorage.getItems("produtos")) || [];
+
+    listap.innerHTML = "";
+
+    p.forEach((produto, index) => {
+        const articlep = document.createElement("article");
+        articlep.classList.add("produto");
+
+        articlep.innerHTML = `
+        <h3>${nome}</h3>
+        <p>${gram} ${tipogram}</p>
+        <p class="leveDestaque">${tipo}</p>
+        `;
+        listap.appenChild(articlep);
+    });
+};
