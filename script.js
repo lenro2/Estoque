@@ -49,7 +49,7 @@ function renderizarP() {
         <p>${produto.gram} ${produto.tipogram}</p>
         <p class="leveDestaque">${produto.tipo}</p>
         `;
-        if (produto.tipo === "Produto") {
+        if (produto.tipo === "produto") {
             listap.appendChild(articlep);
         } else {
             listamp.appendChild(articlep);
