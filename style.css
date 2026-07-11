@@ -123,3 +123,11 @@ input {
     display: flex;
     align-items: center;
 }
+
+.produto {
+    
+};
+
+.leveDestaque {
+    font-size: 20px;
+}
