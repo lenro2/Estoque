@@ -134,12 +134,9 @@ input {
     border-radius: 15px;
 };
 
-.leveDestaque {
-    font-size: 20px;
-}
-
 .container-lista {
     background: #e0e0e0;
     border-top: 5px solid rgb(87, 168, 235);
     border-bottom: 5px solid rgb(87, 168, 235);
+    padding: 5px;
 }
