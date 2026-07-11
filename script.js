@@ -50,9 +50,9 @@ function renderizarP() {
         <p class="leveDestaque">${produto.tipo}</p>
         `;
         if (produto.tipo === "Produto") {
-            listaProdutos.appendChild(articlep);
+            listap.appendChild(articlep);
         } else {
-            listaMateriaPrima.appendChild(articlep);
+            listamp.appendChild(articlep);
         }
     });
 };
