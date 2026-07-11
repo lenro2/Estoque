@@ -128,8 +128,14 @@ input {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    widht: 75px;
-    height: 50px;
+    
+    /* Adicione estas propriedades para criar o visual de card */
+    border: 2px solid #000;
+    border-radius: 15px;
+    padding: 15px;
+    min-width: 150px; /* Largura mínima para o texto caber */
+    background-color: #fff;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
 };
 
 .leveDestaque {
