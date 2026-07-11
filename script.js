@@ -28,4 +28,7 @@ function add(event) {
     produtos.push(produto);
 
     localStorage.setItem("produtos", JSON.stringify(produtos));
+
+    event.target.reset();
 }
+
